@@ -1,0 +1,222 @@
+:root {
+  --main-purple: teal;
+  --dark-purple: darkslategray;
+  --light-purple: aliceblue;
+  --magenta: coral;
+  --page-bg: ghostwhite;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--page-bg);
+}
+
+[data-bs-theme="dark"] body {
+  background: darkslategray;
+  color: whitesmoke;
+}
+
+.navbar {
+  border-bottom: 1px solid lightblue;
+}
+
+[data-bs-theme="dark"] .navbar {
+  background: darkslategray !important;
+  border-color: steelblue;
+}
+
+.brand-box {
+  color: white;
+  background: linear-gradient(135deg, var(--main-purple), var(--magenta));
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 90px 0;
+  background: linear-gradient(135deg, ghostwhite, aliceblue);
+}
+
+[data-bs-theme="dark"] .hero {
+  background: linear-gradient(135deg, darkslategray, darkcyan);
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.hero .lead {
+  max-width: 650px;
+}
+
+.purple-text {
+  color: var(--main-purple);
+}
+
+.btn-purple {
+  background-color: var(--main-purple);
+  border-color: var(--main-purple);
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: var(--dark-purple);
+  border-color: var(--dark-purple);
+  color: white;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--light-purple);
+  color: var(--main-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+[data-bs-theme="dark"] .feature-icon {
+  background: teal;
+  color: paleturquoise;
+}
+
+.feature-card,
+.price-card,
+.testimonial-card {
+  height: 100%;
+  border: 1px solid lightblue;
+  border-radius: 12px;
+  padding: 28px;
+  background: white;
+}
+
+[data-bs-theme="dark"] .feature-card,
+[data-bs-theme="dark"] .price-card,
+[data-bs-theme="dark"] .testimonial-card,
+[data-bs-theme="dark"] .contact-box {
+  background: darkslategray;
+  border-color: steelblue;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background: azure;
+}
+
+[data-bs-theme="dark"] .section-light {
+  background: darkslategray;
+}
+
+.price-card.featured {
+  border: 2px solid var(--magenta);
+  position: relative;
+}
+
+.price-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: mistyrose;
+  color: firebrick;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.price-amount {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.price-amount span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  min-height: 110px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--main-purple), var(--magenta));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.contact-box {
+  border: 1px solid lightblue;
+  border-radius: 12px;
+  padding: 30px;
+  background: white;
+}
+
+footer {
+  background: darkslategray;
+  color: white;
+  padding: 25px 0;
+}
+
+footer a {
+  color: lightcoral;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.theme-button {
+  border: 1px solid lightblue;
+  background: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+[data-bs-theme="dark"] .text-secondary {
+  color: lightcyan !important;
+}
+
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] h6 {
+  color: white;
+}
+
+[data-bs-theme="dark"] .nav-link {
+  color: lavender;
+}
+
+[data-bs-theme="dark"] .nav-link:hover {
+  color: salmon;
+}
+
+[data-bs-theme="dark"] .form-label {
+  color: white;
+}
+
+[data-bs-theme="dark"] .form-control {
+  background-color: darkslategray;
+  color: white;
+  border-color: steelblue;
+}
+
+[data-bs-theme="dark"] .form-control::placeholder {
+  color: lightblue;
+}
